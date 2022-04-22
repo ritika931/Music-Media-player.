@@ -1,0 +1,374 @@
+:root{
+	--background-image: url("media/background image/background_image_2jpg.jpg");
+	--jumbotron-color: #141b41;
+	--playlist-items-background-color: #1a1e33;
+	--playlist-items-background-color-on-hover: #2e3249;
+}
+body {
+	/* background-image: var(--background-image); */
+	background-image: var(--background-image);
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+/* top navigation bar */
+.navigation-bar {
+	height: auto;
+	width: auto;
+	background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; 
+}
+.navigation-bar>div{
+	display: inline-block;
+}
+.website-logo img{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+/*website title and genral description*/
+.title-combo > div{
+       vertical-align: middle;
+       display: inline-block;
+}
+/*search bar*/
+.search-bar{
+	width: 20%;
+	position: relative;
+}
+/*style of input bar*/
+.search-bar input{
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon  */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon  */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+input:focus {
+	outline: none;
+}
+/* notification bell image */
+.notification-bell img {
+	width: 30px;
+	height: 30px;
+}
+/* profile picture */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+/*main*/
+main{
+	width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+/*two section*/
+.aside{
+	display: inline-block;
+	overflow: hidden;
+}
+/*section one of the main part*/
+.section-1{
+	width: 70%;
+	height: 85vh;
+	overflow: scroll;
+}
+.section-1::-webkit-scrollbar{
+	display: none;
+}
+/*section 2*/
+.section-2{
+	width: 28%;
+	height: 85vh;
+	z-index: 2;
+}
+/*aside section 1*/
+/*jumbotron*/
+.jumbotron{
+	height: 20vw;
+	width: 100%;
+	margin-top: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--jumbotron-color);
+	margin-bottom: 40px;
+	position: relative;
+}
+.jumbotron-image{
+	height: 20vw;
+	width: 20vw;
+	background-image: url();
+      background-image: linear-gradient(to bottom,transparent,rgba(20,27,65,1)),url(media/playlist/4.who.jpg);
+      background-size: cover;
+
+
+}
+/* right part of the jumbotron */
+.jumbotron-detail {
+	width: 67%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 12px;
+}
+/*description part*/
+.descriptive-part,
+.action-part{
+	width: 100%;
+	height: max-content;
+}
+/*name and like*/
+.song-name-main,
+.likes{
+	display: inline-block;
+}
+/*heading*/
+.song-name-main h1{
+	font-size: 2vw;
+}
+/*likes*/
+.likes{
+	position: absolute;
+	right: 0%;
+	top: 5%;
+}
+.likes,
+.singer{
+	font-size: 1.5vw;
+}
+.desc{
+	font-size: 1vw;
+}
+.action-part p{
+	font-size: 1vw;
+}
+.btns>button{
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	font-size: 1.2vw;
+}
+/*play button*/
+.btns>button:nth-child(1){
+	background-image: linear-gradient(90deg,red 0%,blue 100%);
+}
+/*follow*/
+.btns>button:nth-child(2)
+{
+	background-image:linear-gradient(65deg,cyan 9%,black 65%) ;
+}
+/* particular item  */
+.playlist-item {
+	height: 8vh;
+       box-sizing: border-box;
+	background-color: var(--playlist-items-background-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+/* hovering effects */
+.playlist-item:hover {
+	background-color: var(--playlist-items-background-color-on-hover);
+}
+.left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+}
+/* center part of the playlist item */
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+	height: 100%;
+}
+/* right part of the playlist item */
+.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+}
+.left > div:nth-child(2) {
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+}
+.left > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+.left > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+/* customizing the play button */
+.play-btn {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+}
+/* on hover effects */
+.play-btn:hover {
+	opacity: 0.7;
+}
+/* adjusting fonts in the playlist items  */
+.left div p {
+	font-size: 14px;
+}
+.center {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.right {
+	color: rgb(185, 185, 185);
+}
+.right div:nth-child(2) {
+	margin-left: 27%;
+}
+label~input{
+	display: none;
+}
+/*section-2 aside*/
+.section-heading{
+	margin-top: 10px;
+	position: relative;
+	margin: 12px;
+}
+.section-heading div,
+.section-heading h1{
+	display: inline-block;
+}
+.section-heading h1{
+	font-size: 25px;
+}
+.section-heading div{
+	position: absolute;
+	bottom: 0%;
+	right: 0px;
+	font-size: 15px;
+}
+.list{
+	height: 40vh;
+	overflow: scroll;
+}
+.list::-webkit-scrollbar {
+	display: none;
+}
+.list-item{
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* hovering effect  */
+.list-item:hover {
+	background-color: var(--playlist-items-background-color-on-hover);
+}
+.list-item > div:nth-child(1) {
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+.list-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 100%;
+}
+.author-name {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.extra {
+	text-align: right;
+	height: 100%;
+}

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="Single Playlist Screen Styles.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="Secondary page responsive.css">
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+<!--body-->
+<body>
+	<!--naviagtion bar-->
+	<nav class="navigation-bar">
+		<!--contains the logo and title of the page-->
+		<div class="title-combo">
+			<div class="website-logo">
+				<img src="media/website_logo.svg">
+			</div>
+			<div class="website-name">
+                <h1>
+                    <a href="index.html">
+                       Modern Radio 
+                    </a>
+                </h1>
+                <h4 style="color: magenta;">
+                    <a href="index.html">Online Music Player</a>
+                </h4>
+            </div>
+        </div>
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <div class="notification-bell">
+            <img src="media/bell_icon.svg">
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="media/profile-picture.svg">
+        </div>
+	</nav>
+	<!--main center part of the page,divided in two sections,section 1 and section 2-->
+	<!--i use aside tag to separate-->
+	<main>
+		<!--aside section 1-->
+		<aside class="aside section-1">
+			<!--this is for the jumbotron-->
+			<div class="jumbotron">
+				<div class="jumbotron-image">
+					
+				</div>
+				<!--details-->
+				<div class="jumbotron-detail">
+					<!--contains name,likesandd etc-->
+					<div class="descriptive-part">
+						<div class="song-name-main">
+							<h1>Who Says</h1>
+							
+						</div>
+						<div class="likes">
+							2.2k
+						</div>
+						<p class="singer">Selena Gomez</p>
+						<p class="desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.      
+							
+						</p>
+                            
+					</div>
+                    <!-- action part -->
+                    <div class="action-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button>Follow</button>
+                        </div>
+                        <p>
+                            5 Tracks | 2 Albums
+                        </p>
+                    </div>
+					
+				</div>
+				
+			</div>
+			<!--playlist section-->
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						1
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<!--playlist items-->
+			<div class="playlist-item">
+				<div class="left">
+					<div>
+						2
+					</div>
+					<div>
+						<img src="media/playlist/1 kaun.jpg">
+						<div class="play-btn">
+                                <i class="fas fa-play"></i>
+                        </div>
+					</div>
+				<div>
+					<h5>
+						Kaun Tujhe
+					</h5>
+					<p>
+						Shreya 
+					</p>
+				</div>
+			</div>
+			<div class="center">
+                        3:44
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						3
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						4
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						5
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						6
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						7
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						8
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						9
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						10
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						11
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				
+			</div>
+			<div class="playlist-item">
+				<!--item-->
+				<div class="left">
+					<div>
+						12
+					</div>
+					<div>
+						<img src="media/playlist/5.man.jpg">
+						<div class="play-btn">
+							<i class="fas fa-play"></i>
+							
+						</div>
+					</div>
+					<div>
+						<h5>
+							Mann Bharya2.0
+						</h5>
+						<p>
+							B.praak
+						</p>
+					</div>
+					
+				</div>
+				<div class="center">
+					3:26
+					
+				</div>
+				<div class="right">
+					<div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+						 <i class="fas fa-plus"></i>
+					</div>
+				</div>
+				</div>
+			</div>
+		</aside>
+        <!--one section is complete-->
+        <!--second section is start from hehre-->
+        <!--label for more button-->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <input type="checkbox" id="more">
+        <aside class="aside-section-2">
+        	<div class="similar">
+        		<div class="section-heading">
+        			<h1>Similar Songs</h1>
+        			<div class="view-all-button">
+        				View All
+        				
+        			</div>
+        		</div>
+        		<!--list for the similar songs-->
+        		<div class="list">
+        			<div class="list-item">
+        				<div>
+        					<img src="media/music themes/rock.jpg">
+        					<div class="play-btn">
+        						<i class="fas fa-play"></i>
+        					</div>
+        				</div>
+        				<div style="position:absolute ;left: 120px;">
+        					<h5>
+        						Rockstar
+        					</h5>
+        					<p class="singer-name">
+        						Amit 
+        					</p>
+        				</div>
+        				<div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+        			</div>
+        			<div class="list-item">
+        				<div>
+        					<img src="media/music themes/rock.jpg">
+        					<div class="play-btn">
+        						<i class="fas fa-play"></i>
+        					</div>
+        				</div>
+        				<div style="position:absolute ;left: 120px;">
+        					<h5>
+        						Rockstar
+        					</h5>
+        					<p class="singer-name">
+        						Amit 
+        					</p>
+        				</div>
+        				<div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+        			</div>
+        			<div class="list-item">
+        				<div>
+        					<img src="media/music themes/rock.jpg">
+        					<div class="play-btn">
+        						<i class="fas fa-play"></i>
+        					</div>
+        				</div>
+        				<div style="position:absolute ;left: 120px;">
+        					<h5>
+        						Rockstar
+        					</h5>
+        					<p class="singer-name">
+        						Amit 
+        					</p>
+        				</div>
+        				<div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+        			</div>
+        		</div>
+                    <!--recently played section-->
+                    <div class="similar">
+                    	<div class="section-heading">
+                    		<h1>Recently played</h1>
+                    		<div class="view-all-button">
+                    			VIew All
+                    			
+                    		</div>
+                    		
+                    	</div>
+                    	<div class="list">
+                    		<!--item-->
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					1
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					2
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					3
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					4
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					5
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					6
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					7
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+                    		<div class="playlist-item">
+                    			<div class="left">
+                    				<div>
+                    					8
+                    				</div>
+                    				<div>
+                    					<img src="media/songs/Raataan Lambiyan.jpg">
+                    					<div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                         </div>
+                    			   </div>
+                    				<div>
+                    					<h5>
+                    						Raatan lambiyan
+                    					</h5>
+                    					<p>
+                    						Jubin                        				
+                    					</p>
+                    				</div>
+
+                    				</div>
+                    				<div class="right">
+                    					<div>
+                    						<i class="far fa-heart"></i>
+                    					</div>
+                    					
+                    				</div>
+                    			
+                    		</div>
+
+                    		
+                    	</div>
+                    	
+                    </div>
+        	</div>
+        	
+        </aside>
+	</main>
+	
+</body>
+<body>
+
+</body>
+</html>

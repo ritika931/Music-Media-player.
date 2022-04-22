@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="Stylesheet_main.css"><!--this is the main stylesheet-->
+    <link rel="stylesheet" type="text/css" href="primary page responsive.css"><!-- this is the style sheet with all the media queries -->
+	<!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+
+
+</head>
+<!--Body-->
+<body>
+	<!--Navigation Bar-->
+	<nav class="navigation-bar">
+		<!--this div contains the logo and title on the page-->
+		<div class="title-combo">
+			<div class="website-logo">
+				<img src="media/website_logo.svg">
+			</div>
+			<div class="website-name">
+				<h1>
+					Modern Radio
+				</h1>
+				<h4>
+					Online Music Player
+				</h4>
+			</div>
+		</div>
+		<!--this is animated fav text-->
+		<div class="favs">
+			<h4>
+				Favourites
+			</h4>
+		</div>
+		<!--for search bar-->
+		<div class="search-bar">
+			<div>
+				<!--search icon-->
+				<i class="fas fa-search search-ico"></i>
+			</div>
+			<input type="text" name="search" placeholder="Search">
+			<div>
+				<!--mic icon-->
+				<i class="fas fa-microphone mic-ico"></i>
+			</div>
+		</div>
+		<!--notification bell-->
+		<div class="notification-bell">
+			<img src="media/bell_icon.svg">
+		</div>
+		<div class="profile-picture">
+			<img src="media/profile-picture.svg">
+		</div>
+	</nav>
+    <!--this is the main part of the page and it is divided into two sections,seaction 1 and section 2-->
+    <!--separated using the aside tag for each section-->
+    <main>
+    	<!--aside section 1-->
+    	<aside class="aside-section-1">
+    		<!--carousel-->
+            <div class="outer-carousel">
+            	<div class="carousel">
+            		<img src="media/carousel/carousel image1.jpg">
+            		<img src="media/carousel/carousel image2.jpg">
+                    <img src="media/carousel/carousel image3.jpg">
+    		    </div>
+    		</div>
+    		<!--latest release-->
+    		<div class="latest-release">
+    		   <h1 style="margin-bottom: 12px;">
+                    Latest Release
+                </h1>
+    		  <!--content of latest release section-->
+    		  <!--contain the cards-->
+    		  <div class="latest-release-content">
+    		  	<!--first card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Raataan Lambiyan.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Raataan Lambiyan
+    		  				</h3>
+    		  				<p>
+    		  					16 August 2021
+    		  				</p>
+    		  			</div>
+    		  			<!--if we click on 3 dots ,options will be shown-->
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						<!-if user clicks on play now buton,it will be taken to single playlist-->
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<!--duration of song-->
+    		  				<p>
+    		  					3:50
+    		  				</p>
+    		  			</div>
+    		  		</div>
+    		  		<!--second card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Flihaal 2.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Flihaal 2
+    		  				</h3>
+    		  				<p>
+    		  					6 July 2021
+    		  				</p>
+    		  			</div>
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<p>
+    		  					5:25
+    		  				</p>
+    		  			</div>
+    		  		</div>
+    		  		<!--third card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Titliaan.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Titliaan
+    		  				</h3>
+    		  				<p>
+    		  					9 August 2020
+    		  				</p>
+    		  			</div>
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<p>
+    		  					3:15
+    		  				</p>
+    		  			</div>
+    		  		</div>
+    		  		<!--fourth card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Dil Galti Kar Baitha.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Dil Galti Kar Baitha
+    		  				</h3>
+    		  				<p>
+    		  					25 Sept 2021
+    		  				</p>
+    		  			</div>
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<p>
+    		  					4:33
+    		  				</p>
+    		  			</div>
+    		  		</div>
+    		  		<!--fifth card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Baarish Ban Jana.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Barrish Ban Jana
+    		  				</h3>
+    		  				<p>
+    		  					3 March 2021
+    		  				</p>
+    		  			</div>
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<p>
+    		  					3:20
+    		  				</p>
+    		  			</div>
+    		  		</div>
+    		  		<!--second card-->
+    		  		<div class="card">
+    		  			<div>
+    		  				<!--image corresponding to card-->
+    		  				<img src="media/songs/Thoda Thoda Pyaar.jpg">
+    		  				<!--play button-->
+    		  				<div class="play-button">
+    		  				<i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+    		  				</div>	
+    		  			</div>
+    		  			<!--contain the name and date of release of the song-->
+    		  			<div class="song-description">
+    		  				<h3>
+    		  					Thoda Thoda Pyaar
+    		  				</h3>
+    		  				<p>
+    		  					12 Feb 2021
+    		  				</p>
+    		  			</div>
+    		  			<div class="options">
+    		  				<label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+    		  				<input type="checkbox" id="latest-release-checkbox" >
+    		  				<div class="latest-release-dropdown">
+    		  					<div class="drop item">
+    		  						 <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+    		  				</div>
+    		  				<p>
+    		  					4:32
+    		  				</p>
+    		  			</div>
+    		  		</div>
+                </div>
+    		 </div>
+    		 <!--popular artist-->
+    		 <div class="popular-artists">
+    		 	<!--heading of popular artist-->
+    		 	<h1 style="margin-bottom:12px;">
+    		 		Popular Artists
+    		 	</h1>
+    		 	<!--content of popular artist-->
+    		 	<div class="popular-artists-content">
+    		 		<!--if clicks on one artist,it will redirect to the second page-->
+    		 		<!--lists of artist-->
+    		 		<!--first artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Arijit Singh.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Arijit Singh
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--second artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Jubin Nautiyal.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Jubin Nautiyal
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--third artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/B.praak.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					B.praak
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--fourth artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Shreya Ghoushal.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Shreya Ghoshal
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--fifth artist
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Stebin Ben.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Stebin Ben
+    		 				</p>
+    		 			</div>
+    		 		</a>-->
+    		 		<!--sixth artist
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Neha Kakkar.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Neha Kakkar
+    		 				</p>
+    		 			</div>
+    		 		</a>-->
+                        		 		<!--seventh artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/TulsiKumaar.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Tulsi Kumar
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--eigth artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Rochak Kohli.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Rochak Kholi
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		<!--ninth artist-->
+    		 		<a href="Single Playlist Screen.html">
+    		 			<div>
+    		 				<img src="media/popular artist/Darshan Raval.jpg">
+    		 				<div><i class="fas fa-play"></i></div>
+    		 				<p>
+    		 					Darshan Raval
+    		 				</p>
+    		 			</div>
+    		 		</a>
+    		 		
+    		 	</div>
+    		 	
+    		 </div>
+    		 <!--Music Themes part-->
+             <div class="music-themes">
+                <!--this div contains the logo of music themes,the logo with red,lightgrey,pink-->
+                <div class="stations">
+                    <div id="div1">
+                       
+                            <div id="div2">
+                                <img src="media/website_logo.svg">
+                                <p>Categories</p>
+                                
+                            </div>
+                            
+                        
+                        
+                    </div>
+                    
+                </div>
+                <!--content of themes part-->
+                <!--change color on hover-->
+                <div class="theme-main">
+                    <div class="theme-content">
+                        <img src="media/music themes/chill.jpg">
+                        <p>Chill</p>
+                        
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/music themes/rock.jpg">
+                        <p>Rock</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/music themes/love.jpg">
+                        <p>Love</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/music themes/sad.jpg">
+                        <p>Sad</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/music themes/Retro.jpg">
+                        <p>Retro</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/music themes/workout.jpg">
+                        <p>Workout</p>
+                    </div>
+                   
+                    
+                </div>
+                 
+             </div>
+        </aside>
+        <!--one aside section is complete-->
+        <!--second aside section will start from here-->
+        <!--when the aside section collapse then a more button will be visible-->
+        <!--this is the label for that more button-->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <!--and a checkbox,always hidden-->
+        <!--when the label is clicked this will be checked-->
+        <input type="checkbox" id="more">
+        <!--section 2 starts here-->
+        <aside class="aside-section-2">
+            <!--heading part of this section-->
+            <div class="heading">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                </h4>
+            </div>
+            <!--queue box will have 3 options,favourite playlist,close-->
+            <div class="queue-option" id="queue-option-box">
+                <p><a href style="color: lightpink; font-weight: bolder;">Playlist</a></p>
+                <hr>
+                <p><a href style="color: darkred; font-weight: bolder;">Favourite</a></p>
+                <hr>
+                <p><a href style="color: yellowgreen; font-weight: bolder;">Close</a></p>
+                <hr>
+            </div>
+            <div class="playlist-centent">
+                <!--first playlist content-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            01
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/1 kaun.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Kaun Tujhe
+                            </div>
+                            <p>
+                                Shreya ghoshal
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--second playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            02
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/2.saware.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Saware
+                            </div>
+                            <p>
+                                Arijit Singh
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--third playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            03
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/3.ab.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Aabaad Barbaad
+                            </div>
+                            <p>
+                                Arijit Singh                                               </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--fourth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            04
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/4.who.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Who Says
+                            </div>
+                            <p>
+                                Selena Gomez
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--fifth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            05
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/5.man.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Mann Bharaya
+                            </div>
+                            <p>
+                                B.praak
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--sixth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            06
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/6.sab t.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Sab Tera
+                            </div>
+                            <p>
+                                Arijit Singh
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            07
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/1 kaun.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Kaun Tujhe
+                            </div>
+                            <p>
+                                Shreya ghoshal
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--eigth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            08
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/2.saware.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Saware
+                            </div>
+                            <p>
+                                Arijit Singh
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--ninth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            09
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/3.ab.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Aabaad Barbaad
+                            </div>
+                            <p>
+                                Arijit Singh                                               </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--tenth playlist-->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div style="margin-right: 4px;">
+                            10
+                        </div>
+                        <div class="hovered-items">
+                            <img src="media/playlist/4.who.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Who Says
+                            </div>
+                            <p>
+                                Selena Gomez
+                            </p>
+                        </div>
+                    </div>
+                    <!--like button-->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!--footer part,its position will be fixed to the bottom of the screen-->
+    <footer>
+        <div class="active-song">
+            <!--name-->
+            <div id="song-image">
+                <img src="media/songs/Flihaal 2.jpg">
+            </div>
+            <!--name and singer-->
+            <div class="song-desc">
+                
+            
+            <div>
+                Filhaal 2
+            </div>
+            <div>
+                B.praak
+            </div>
+        </div>
+                <!--icons-->
+                </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!--player controls-->
+        <div class="player">
+            <div class="controls">
+               <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>  
+                
+            </div>
+            <!--slider-->
+            <div id="slider">
+                <!--time-->
+                <div class="time">
+                    2:56
+                    
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!--total time-->
+                <div class="time">
+                    5:53
+                </div>
+            </div>
+        </div>
+        <!--other icons-->
+        <div class="extra">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
